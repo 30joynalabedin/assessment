@@ -1,22 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+	<title>BMI Calculator</title>
 </head>
 <body>
-    <script>
-        function multiplicationTable(num){
-    for(i=1; i<=10; i++){
-        var product =i*num;
-        console.log(num + " x " + i + " = "+ product);
-    }
-   
-}multiplicationTable(prompt("Enter an Integer"));
-    </script>
+	<h1>BMI Calculator</h1>
+	<form>
+		<label for="weightInput">Weight (kg): </label>
+		<input type="number" id="weightInput" required><br><br>
+		<label for="heightInput">Height (cm): </label>
+		<input type="number" id="heightInput" required><br><br>
+		<button type="button" id="calculateBtn">Calculate BMI</button><br><br>
+		<label for="result">Your BMI is: </label>
+		<span id="result"></span>
+	</form>
+	<style>
+		body{
+			background: #FF416C;  /* fallback for old browsers */
+			background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
+	
+		}
+		   form{
+			
+			position: absolute;
+			 top: 50%;
+			left: 50%;
+			 transform: translate(-50%, -50%);
+			}
+		   
+		
+			h1{
+				margin-top: 100px;
+				text-align: center;
+				color: rgb(31, 18, 3);
+				height: 20px;
+				font-weight: 10;
+			}
+			label{
+				color: rgb(22, 24, 23);
+			
+			}
+			button {
+				background-color: #8EC5FC;
+				background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+	
+				
+				
+			}
+			button :hover{
+				background-color: rgb(22, 20, 20);
+			}
+		</style>
+	<script src="index.js"></script>
 </body>
 </html>
